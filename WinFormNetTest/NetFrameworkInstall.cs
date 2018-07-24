@@ -17,7 +17,7 @@ namespace WinFormNetTest
         {
             InitializeComponent();
 
-            lblMsgText.Text = $"The current .NET Framework version needs to be upgraded to at least version: {major}.{minor}.{build}.{revision}.\r\n\r\nMOVRS will not be able to run on this PC until that .NET Framework ( or higher ) is installed.\r\n\r\nClick on the link below to begin the install.\r\n\r\nAfter the install you must relaunch MOVRS.";
+            lblMsgText.Text = $"The current .NET Framework version needs to be upgraded to version: {major}.{minor}.{build}.{revision}.\r\n\r\nMOVRS will not be able to run on this PC until that .NET Framework ( or higher ) is installed.\r\n\r\nClick the install link bottom left to begin download.  Must be connected to the internet during install.\r\n\r\nAfter the install you must relaunch MOVRS.  For more help click on the help link bottom right.";
             lnkNETFramework.Text = $"Install .NET Framework {major}.{minor}.{build}.{revision}";
             
         }
@@ -30,11 +30,11 @@ namespace WinFormNetTest
         private void lnkNETFramework_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             // Start installer
-            Process.Start(@"C:\some_location\myapplication.exe");
+            //Process.Start(@"C:\some_location\myapplication.exe");
 
 
             // open browser to link
-            ProcessStartInfo sInfo = new ProcessStartInfo("http://cjonline.com");
+            ProcessStartInfo sInfo = new ProcessStartInfo("http://localhost/download/NDP471-KB4033344-Web.exe");
             Process.Start(sInfo);
 
             System.Windows.Forms.Application.Exit();

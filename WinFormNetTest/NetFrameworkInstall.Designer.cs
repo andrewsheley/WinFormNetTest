@@ -31,6 +31,7 @@
             this.lblMsgText = new System.Windows.Forms.Label();
             this.lnkNETFramework = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lnkHelp = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,9 +48,10 @@
             // lnkNETFramework
             // 
             this.lnkNETFramework.AutoSize = true;
+            this.lnkNETFramework.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkNETFramework.Location = new System.Drawing.Point(13, 240);
             this.lnkNETFramework.Name = "lnkNETFramework";
-            this.lnkNETFramework.Size = new System.Drawing.Size(55, 13);
+            this.lnkNETFramework.Size = new System.Drawing.Size(72, 17);
             this.lnkNETFramework.TabIndex = 1;
             this.lnkNETFramework.TabStop = true;
             this.lnkNETFramework.Text = "linkLabel1";
@@ -65,11 +67,23 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // lnkHelp
+            // 
+            this.lnkHelp.AutoSize = true;
+            this.lnkHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkHelp.Location = new System.Drawing.Point(741, 244);
+            this.lnkHelp.Name = "lnkHelp";
+            this.lnkHelp.Size = new System.Drawing.Size(37, 17);
+            this.lnkHelp.TabIndex = 3;
+            this.lnkHelp.TabStop = true;
+            this.lnkHelp.Text = "Help";
+            // 
             // NetFrameworkInstall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(820, 278);
+            this.Controls.Add(this.lnkHelp);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lnkNETFramework);
             this.Controls.Add(this.lblMsgText);
@@ -92,5 +106,6 @@
         private System.Windows.Forms.Label lblMsgText;
         private System.Windows.Forms.LinkLabel lnkNETFramework;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.LinkLabel lnkHelp;
     }
 }
